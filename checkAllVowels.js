@@ -1,17 +1,17 @@
 function checkAllVowels(str){
-  let vow = 'a i u e o'.split(' ');
+  let vow = 'aiueo';
   let countVow = 0;
-  for(let i=0; i<vow.length; i++){
-      for(let j=0; j<str.length; j++){
-        if(str[j] == vow[i]){
-          countVow++;
-        }
-      }
+  for(let i=0; i<str.length; i++){
+    //console.log(vow.indexOf(str[i]));
+    if(vow.indexOf(str[i]) != -1){
+      countVow++;
+    }
   }
+  console.log(countVow);
   if(countVow != str.length){
     return false;
   }
-  return true;
+  return true
 }
 
 console.log(checkAllVowels('aaaaaaaa'));
