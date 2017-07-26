@@ -5,9 +5,7 @@ function check(char) {
   if (split.every(isVowel) == true) {
     return true
   }
-  if (split.every(isVowel) == false) {
-    return false
-  }
+  return false
 }
 
 function isVowel(element, index, array) {
