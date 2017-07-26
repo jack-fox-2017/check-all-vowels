@@ -1,9 +1,9 @@
 function checkAllVowels(str){
-
+  //console.log(str.toLowerCase());
   let result = '';
-
-   for(let i=0;i<str.length;i++){
-     if(str[i]==='a' || str[i]==='e' || str[i]==='i' || str[i]==='o' || str[i]==='u'){
+  let newStr = str.toLowerCase();
+   for(let i=0;i<newStr.length;i++){
+     if(newStr[i]==='a' || newStr[i]==='e' || newStr[i]==='i' || newStr[i]==='o' || newStr[i]==='u'){
        result = true;
      }
      else{
@@ -14,7 +14,7 @@ function checkAllVowels(str){
   return result;
 }
 
-console.log(checkAllVowels('oooo'));
+console.log(checkAllVowels('Oooo'));
 console.log(checkAllVowels('axiueo'));
 console.log(checkAllVowels('oueib'));
 console.log(checkAllVowels('eeeeee'));
